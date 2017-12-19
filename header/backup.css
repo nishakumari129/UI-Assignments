@@ -1,0 +1,53 @@
+/*-----Resets style starts here-------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+
+    font-size: 14px;
+    font-weight: 400px;
+    font-family: arial;
+
+}
+
+/*-----Resets style ends here-------*/
+
+/*-----Navigation bar style starts here-------*/
+
+.navigation-bar{
+    background-color: #000;
+    height:60px;
+    width: 100%;
+
+}
+.navigation-bar__list{
+    list-style-type: none;
+    width: 1000px;
+    margin: auto;
+    display: block;
+}
+.navigation-bar__list__item__left a{
+
+    float: left;
+    text-align: center;
+
+}
+.navigation-bar__list__item__right a{
+    float: right;
+    color: #fff;
+    text-align: center;
+    padding: 22px 12px;
+    font-weight: 900;
+
+}
+
+.navigation-bar__list__item__right__arrow {
+    float: right;
+    margin-top: 38px;
+    margin-right: -38px;
+}
+
+/*-----Navigation bar style ends here-------*/

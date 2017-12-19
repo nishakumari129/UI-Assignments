@@ -1,0 +1,158 @@
+/*-----Reset styles start here-------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+body{
+    overflow: auto;
+    min-width: 1000px;
+    min-height: 670px;
+    font-size: 14px;
+    font-family: arial, opensans, sans-serif;
+    font-weight: 400;
+}
+
+/*-----Reset styles ends here-------- */
+
+
+/*-----common styles start here-------- */
+
+.text-transform{
+    text-transform: uppercase;
+}
+.wrapper {
+    width:100%;
+    height: 100%;
+    position: relative;
+}
+.sidebar-nav__links__text,
+.mainContent__layout__heading,
+.mainContent__layout__paragraph1,
+.mainContent__layout__paragraph3{
+    font-family:Dosis;
+}
+
+
+/*-----common styles ends here-------- */
+
+
+/*-----sidebar styles start here-------- */
+.sidebar{
+    background-color: #2f2d2f;
+    opacity: 0.9;
+    width: 254px;
+    background-image: url(images/sidebg.png);
+    height: 100%;
+
+}
+.sidebar__logo img{
+    margin: 40px 10px;
+}
+.sidebar-nav{
+    text-align: left;
+    margin-left: 50px;
+}
+.sidebar-nav__links{
+    margin: 5px;
+    padding: 4px;
+    display: block;
+    color: #ffffff;
+}
+
+.sidebar-nav__links__text{
+    padding: 3px 10px;
+}
+
+
+.sidebar-nav__links__icon {
+    background: url("images/bg_menu_act.gif") no-repeat;
+    display: none;
+    width: 6px;
+    padding-left: 2px;
+    float: right;
+    height: 10px;
+    margin-right: -10px;
+}
+
+.sidebar-nav__links:hover .sidebar-nav__links__text{
+    background-color: #000;
+    border-radius: 4px;
+
+}
+ .sidebar-nav__links:hover .sidebar-nav__links__icon{
+    display: inline-block;
+}
+.active .sidebar-nav__links__text{
+    background-color: #000;
+    border-radius: 4px;
+}
+
+.sidebar__footer{
+    text-transform: none;
+    font-weight: 600;
+    font-size: 12px;
+    color: #fff;
+    position: absolute;
+    bottom: 15px;
+    left: 32px;
+}
+.sidebar__footer span{
+    color: #997f39;
+    font-weight: 600;
+    font-size: 12px;
+}
+/*-----sidebar styles ends here-------- */
+
+/*-----Main content styles start here-------- */
+.mainContent{
+    background-image: url("images/bg_main.png");
+    width: calc(100% - 254px);
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 254px;
+    position: absolute;
+}
+.mainContent__layout{
+    padding-left: 70px;
+    padding-top: 150px;
+    max-width: 700px;
+    height: 100%;
+    margin-bottom: 10px;
+
+}
+.mainContent__layout__heading{
+    font-size: 65px;
+    margin-bottom: 5px;
+
+}
+.mainContent__layout__paragraph1{
+    font-size: 24px;
+    margin-bottom: 10px;
+
+}
+.mainContent__layout__paragraph2{
+    border-top: 3px solid #e2b911;
+    border-bottom: 3px solid #e2b911;
+    font-family: roboto slab;
+    font-size: 25px;
+    margin-bottom: 10px;
+    padding: 10px 0;
+}
+
+.mainContent__layout__paragraph3{
+    text-transform: none;
+    font-size: 13px;
+}
+/*-----Main content styles ends here-------- */

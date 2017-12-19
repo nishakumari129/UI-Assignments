@@ -1,0 +1,125 @@
+/*--------Resets style starts here----------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+html, body{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: arial;
+    height: 100%;
+    flex-flow: row wrap;
+}
+/*-------Resets style ends here-------*/
+
+/*-------Common styles goes here----------*/
+.flexHeader,
+.flexFooter{
+    background-color: #34424e;
+}
+
+/*---------Common styles ends here---------*/
+
+.wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    height: 100%;
+}
+.wrapper > * {
+    flex: 1 100%;
+}
+.flexHeader{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*---------Header styles starts here---------*/
+
+
+.flexHeader__image{
+    text-align: center;
+    width: 250px;
+    height: 50px;
+    margin: 12px;
+
+}
+.flexHeader__text{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 28px;
+}
+/*---------Header styles ends here------------*/
+
+/*------ contents styles starts here----*/
+.flex__col1{
+    flex: 1;
+    background-color: #4a5c6e;
+}
+
+
+.flex__col1__nav__link{
+    color: #fff;
+    font-size: 16px;
+    display: block;
+    padding: 15px 20px;
+    border-bottom: 1px solid #657483;
+}
+.flex__col1__nav__link.active,
+.flex__col1__nav__link:hover
+{
+    background-color: #009ee8;
+}
+.flexWrapper{
+    display: flex;
+    height: calc(100% - 75px - 40px);
+}
+
+.flex__col2 {
+
+    background: #fff;
+    padding: 5px 25px;
+    flex: 3;
+    overflow: auto;
+}
+.flex__col2_paragraph {
+
+    margin-bottom: 28px;
+    font-size: 15px;
+}
+.flex__col2__heading{
+    width: 270px;
+    margin-bottom: 15px;
+
+}
+.flex__col2__heading span{
+    padding-bottom: 4px;
+    border-bottom: 2px solid #000;
+    font-weight: 900;
+    font-size: 24px;
+}
+
+
+/*----------contents styles starts here------------*/
+
+
+/*--------Footer styles starts here---------*/
+.flexFooter {
+    width: 100%;
+    height: 40px;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.flexFooter span{
+    color: #fff;
+    margin: 12px;
+}
+
+/*--------Footer styles ends here---------*/
